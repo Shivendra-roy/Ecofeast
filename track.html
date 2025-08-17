@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track - EcoFeast</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EcoFeast</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="track.html" class="active">Track</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main>
+        <section class="track-section fade-in">
+            <h1>Track Your Donation</h1>
+            <p>Enter your tracking ID to see the current status of your food donation.</p>
+            <form class="track-form">
+                <label for="track-id">Tracking ID:</label>
+                <input type="text" id="track-id" name="track-id" placeholder="Enter Tracking ID" required>
+                <button type="submit">Track</button>
+            </form>
+
+            <div id="tracking-result"></div>
+        </section>
+
+        <!-- Display Available Food -->
+        <section class="available-food-section fade-in">
+            <h2>Available Food</h2>
+            <ul id="foodList"></ul>
+        </section>
+
+        <!-- Display All Requests -->
+        <section class="request-list-section fade-in">
+            <h2>All Requests</h2>
+            <ul id="requestList"></ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 EcoFeast. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFeast - Donate Food</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EcoFeast</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html" class="active">Donate</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="track.html">Track</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Donation Form -->
+    <section class="form-section fade-in">
+        <h2>Donate Food</h2>
+        <p>Fill out the details below to share your surplus food with those in need.</p>
+        
+        <form id="addFoodForm">
+            <label for="foodName">Food Name:</label>
+            <input type="text" id="foodName" name="foodName" required>
+
+            <label for="foodQty">Quantity (in servings):</label>
+            <input type="number" id="foodQty" name="foodQty" required>
+
+            <label for="foodExpiry">Expiry Time:</label>
+            <input type="datetime-local" id="foodExpiry" name="foodExpiry" required>
+
+            <label for="foodLocation">Pickup Location:</label>
+            <input type="text" id="foodLocation" name="foodLocation" required>
+
+            <!-- Optional: image upload (script.js ignores this for now) -->
+            <label for="foodImage">Upload Food Image:</label>
+            <input type="file" id="foodImage" name="foodImage" accept="image/*">
+
+            <button type="submit" class="btn">Submit Donation</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EcoFeast | Zero Waste, Zero Hunger</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

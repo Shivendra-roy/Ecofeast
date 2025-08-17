@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Food - EcoFeast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EcoFeast</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html" class="active">Request</a></li>
+                <li><a href="track.html">Track</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Request Form Section -->
+    <section class="form-section fade-in">
+        <h1>Request Food</h1>
+        <p>If you need surplus food, please fill out the form below and we will try to connect you with nearby donors.</p>
+
+        <form id="requestForm">
+            <!-- Optional extra fields -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="org">Organization (if any):</label>
+            <input type="text" id="org" name="org" placeholder="Enter organization name">
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+            <!-- Fields expected by script.js -->
+            <label for="requestFoodId">Food ID:</label>
+            <input type="text" id="requestFoodId" name="requestFoodId" placeholder="Enter Food ID from list" required>
+
+            <label for="requestQty">Quantity Needed:</label>
+            <input type="number" id="requestQty" name="requestQty" placeholder="Enter quantity (in servings)" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 EcoFeast | Connecting surplus food with those who need it most</p>
+    </footer>
+</body>
+</html>
